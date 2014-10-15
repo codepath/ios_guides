@@ -61,6 +61,42 @@
             </objects>
             <point key="canvasLocation" x="1487" y="588"/>
         </scene>
+        <!--Motion-->
+        <scene sceneID="bQl-1Z-EgU">
+            <objects>
+                <viewController id="W2C-aN-Zu5" customClass="MotionViewController" customModule="SystemFrameworksDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="osN-aA-Kjl"/>
+                        <viewControllerLayoutGuide type="bottom" id="fzv-TC-pwh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dYa-44-9Yj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-bs-f6o">
+                                <rect key="frame" x="4" y="250" width="594" height="100"/>
+                                <color key="backgroundColor" red="0.42164982569999998" green="1" blue="0.3274500843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="du7-Cr-0VW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ha7-bs-f6o" secondAttribute="centerX" id="BUL-Ca-8Ah"/>
+                            <constraint firstAttribute="centerY" secondItem="ha7-bs-f6o" secondAttribute="centerY" id="CeA-jX-K5m"/>
+                            <constraint firstAttribute="width" secondItem="ha7-bs-f6o" secondAttribute="width" id="ISx-lS-XoC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Motion" id="9rf-Am-HdO"/>
+                    <connections>
+                        <outlet property="widthConstraint" destination="ISx-lS-XoC" id="lLh-EW-jWm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAm-lv-bod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="112"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8qq-bZ-lgT">
             <objects>
@@ -76,11 +112,12 @@
                         <segue destination="hRQ-BX-tO0" kind="relationship" relationship="viewControllers" id="jEW-Gd-eyG"/>
                         <segue destination="dR9-CO-PBN" kind="relationship" relationship="viewControllers" id="zgW-52-eBS"/>
                         <segue destination="R7Q-X6-wrm" kind="relationship" relationship="viewControllers" id="HjZ-OB-iul"/>
+                        <segue destination="W2C-aN-Zu5" kind="relationship" relationship="viewControllers" id="zno-2C-1gq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFc-hP-N1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="1026"/>
+            <point key="canvasLocation" x="-221" y="926"/>
         </scene>
         <!--Address Book-->
         <scene sceneID="zVe-XC-UEL">
@@ -178,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMV-ng-BaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677" y="1918"/>
+            <point key="canvasLocation" x="759" y="2184"/>
         </scene>
         <!--Photos-->
         <scene sceneID="Lf4-Sy-qfu">

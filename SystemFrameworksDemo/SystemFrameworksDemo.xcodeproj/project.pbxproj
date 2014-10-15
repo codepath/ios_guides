@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5B075E419EE68E0000A4E44 /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B075E319EE68E0000A4E44 /* MotionViewController.swift */; };
+		B5B075E619EE69B4000A4E44 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B075E519EE69B4000A4E44 /* CoreMotion.framework */; };
 		B5D0760019EE2CBC002631EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D075FF19EE2CBC002631EC /* AppDelegate.swift */; };
 		B5D0760219EE2CBC002631EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0760119EE2CBC002631EC /* ViewController.swift */; };
 		B5D0760519EE2CBC002631EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D0760319EE2CBC002631EC /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5B075E319EE68E0000A4E44 /* MotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
+		B5B075E519EE69B4000A4E44 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B5D075FA19EE2CBC002631EC /* SystemFrameworksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemFrameworksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D075FE19EE2CBC002631EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5D075FF19EE2CBC002631EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B075E619EE69B4000A4E44 /* CoreMotion.framework in Frameworks */,
 				B5D0762F19EE6322002631EC /* LocalAuthentication.framework in Frameworks */,
 				B5D0762B19EE59C2002631EC /* AddressBook.framework in Frameworks */,
 				B5D0762419EE2D49002631EC /* AVKit.framework in Frameworks */,
@@ -108,6 +113,7 @@
 				B5D0762519EE4F91002631EC /* PhotosViewController.swift */,
 				B5D0762719EE5481002631EC /* AddressBookViewController.swift */,
 				B5D0762C19EE6280002631EC /* LocalAuthenticationViewController.swift */,
+				B5B075E319EE68E0000A4E44 /* MotionViewController.swift */,
 			);
 			path = SystemFrameworksDemo;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 		B5D0762919EE59AA002631EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5B075E519EE69B4000A4E44 /* CoreMotion.framework */,
 				B5D0762E19EE6322002631EC /* LocalAuthentication.framework */,
 				B5D0762A19EE59C2002631EC /* AddressBook.framework */,
 				B5D0762319EE2D49002631EC /* AVKit.framework */,
@@ -249,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D0762819EE5481002631EC /* AddressBookViewController.swift in Sources */,
+				B5B075E419EE68E0000A4E44 /* MotionViewController.swift in Sources */,
 				B5D0762019EE2D1F002631EC /* LocationViewController.swift in Sources */,
 				B5D0762D19EE6280002631EC /* LocalAuthenticationViewController.swift in Sources */,
 				B5D0762619EE4F91002631EC /* PhotosViewController.swift in Sources */,

@@ -16,6 +16,7 @@
 		B5D0762019EE2D1F002631EC /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0761F19EE2D1F002631EC /* LocationViewController.swift */; };
 		B5D0762219EE2D35002631EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D0762119EE2D35002631EC /* CoreLocation.framework */; };
 		B5D0762419EE2D49002631EC /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D0762319EE2D49002631EC /* AVKit.framework */; };
+		B5D0762619EE4F91002631EC /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0762519EE4F91002631EC /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B5D0761F19EE2D1F002631EC /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B5D0762119EE2D35002631EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B5D0762319EE2D49002631EC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B5D0762519EE4F91002631EC /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				B5D0760819EE2CBC002631EC /* LaunchScreen.xib */,
 				B5D075FD19EE2CBC002631EC /* Supporting Files */,
 				B5D0761F19EE2D1F002631EC /* LocationViewController.swift */,
+				B5D0762519EE4F91002631EC /* PhotosViewController.swift */,
 			);
 			path = SystemFrameworksDemo;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D0762019EE2D1F002631EC /* LocationViewController.swift in Sources */,
+				B5D0762619EE4F91002631EC /* PhotosViewController.swift in Sources */,
 				B5D0760219EE2CBC002631EC /* ViewController.swift in Sources */,
 				B5D0760019EE2CBC002631EC /* AppDelegate.swift in Sources */,
 			);
@@ -419,6 +423,7 @@
 				B5D0761B19EE2CBC002631EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5D0761C19EE2CBC002631EC /* Build configuration list for PBXNativeTarget "SystemFrameworksDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				B5D0761E19EE2CBC002631EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

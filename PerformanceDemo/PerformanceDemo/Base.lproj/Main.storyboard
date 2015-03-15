@@ -62,6 +62,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="heU-hS-yli" kind="show" id="90G-2N-W87"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -75,7 +78,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sai-19-qr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="429"/>
+            <point key="canvasLocation" x="962" y="413"/>
         </scene>
         <!--Slow Scrolling Table View Controller-->
         <scene sceneID="vQx-J1-OZ3">
@@ -102,6 +105,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgq-XD-5uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1944" y="136"/>
+        </scene>
+        <!--Saw Tooth View Controller-->
+        <scene sceneID="6E1-um-Maa">
+            <objects>
+                <viewController id="heU-hS-yli" customClass="SawToothViewController" customModule="PerformanceDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zpt-r8-FwH"/>
+                        <viewControllerLayoutGuide type="bottom" id="KQl-Qa-krr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8w2-M7-kEh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v35-wr-1Ov">
+                                <rect key="frame" x="266" y="290" width="68" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="v35-wr-1Ov" secondAttribute="centerX" id="OgV-9m-Rt1"/>
+                            <constraint firstAttribute="centerY" secondItem="v35-wr-1Ov" secondAttribute="centerY" id="bMa-WW-CCh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel" destination="v35-wr-1Ov" id="PRI-0u-g8l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOU-Hm-Xfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="1578"/>
         </scene>
         <!--Leaky View Controller-->
         <scene sceneID="9sT-69-f2P">

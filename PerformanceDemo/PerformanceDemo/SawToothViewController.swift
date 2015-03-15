@@ -8,17 +8,24 @@
 
 import UIKit
 
+let ITERATIONS = 100
+
 class SawToothViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    @IBOutlet weak var progressLabel: UILabel!
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
+            for var i = 0; i < ITERATIONS; i++ {
+                for var j = 0; j < 10000; j++ {
+                    var myString:String = "i:\(i)/ j:\(j)"
+                    var myUppercaseString = myString.uppercaseString
+                }
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.progressLabel.text = "\((Float(i) / Float(ITERATIONS)) * 100)%"
+                }
+            }
+        }
+    }
 }

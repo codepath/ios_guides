@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B58633EF1AB632D700AD1208 /* SawToothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58633EE1AB632D700AD1208 /* SawToothViewController.swift */; };
 		B58633F11AB6354500AD1208 /* FibonacciEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58633F01AB6354500AD1208 /* FibonacciEntry.swift */; };
+		B58633F31AB644DD00AD1208 /* LeakyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58633F21AB644DD00AD1208 /* LeakyViewController.swift */; };
 		B5B8F9B91AB58A6B00676C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B8F9B81AB58A6B00676C33 /* AppDelegate.swift */; };
 		B5B8F9BE1AB58A6B00676C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B8F9BC1AB58A6B00676C33 /* Main.storyboard */; };
 		B5B8F9C01AB58A6B00676C33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B8F9BF1AB58A6B00676C33 /* Images.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		B58633EE1AB632D700AD1208 /* SawToothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SawToothViewController.swift; sourceTree = "<group>"; };
 		B58633F01AB6354500AD1208 /* FibonacciEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciEntry.swift; sourceTree = "<group>"; };
+		B58633F21AB644DD00AD1208 /* LeakyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeakyViewController.swift; sourceTree = "<group>"; };
 		B5B8F9B31AB58A6B00676C33 /* PerformanceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerformanceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B8F9B71AB58A6B00676C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B8F9B81AB58A6B00676C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				B5B8F9B61AB58A6B00676C33 /* Supporting Files */,
 				B5B8F9D81AB630EC00676C33 /* SlowScrollingTableViewController.swift */,
 				B58633F01AB6354500AD1208 /* FibonacciEntry.swift */,
+				B58633F21AB644DD00AD1208 /* LeakyViewController.swift */,
 			);
 			path = PerformanceDemo;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58633F31AB644DD00AD1208 /* LeakyViewController.swift in Sources */,
 				B5B8F9D91AB630EC00676C33 /* SlowScrollingTableViewController.swift in Sources */,
 				B5B8F9B91AB58A6B00676C33 /* AppDelegate.swift in Sources */,
 				B58633EF1AB632D700AD1208 /* SawToothViewController.swift in Sources */,

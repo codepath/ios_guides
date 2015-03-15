@@ -45,6 +45,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AHr-xf-FCX" kind="show" id="jYy-Kv-aW9"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="wo5-w9-SHn" style="IBUITableViewCellStyleDefault" id="xIA-Az-DhQ">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -98,7 +101,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgq-XD-5uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="436"/>
+            <point key="canvasLocation" x="1944" y="136"/>
+        </scene>
+        <!--Leaky View Controller-->
+        <scene sceneID="9sT-69-f2P">
+            <objects>
+                <viewController id="AHr-xf-FCX" customClass="LeakyViewController" customModule="PerformanceDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehY-Ta-eN6"/>
+                        <viewControllerLayoutGuide type="bottom" id="D2L-RP-dj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oQK-qz-xXM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJy-LT-mdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="948"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NZR-gX-F87">

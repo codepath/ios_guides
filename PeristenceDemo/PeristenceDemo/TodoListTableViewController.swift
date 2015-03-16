@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import CoreData
 
 class TodoListTableViewController: UITableViewController, TodoItemTableViewCellDelegate {
 
-    var items:[TodoItem] = Array()
+    var items:[TodoItem] = Array() {
+        didSet(oldItems){
+            self.tableView.reloadData()
+        }
+    }
+
+    var managedObjectContext:NSManagedObjectContext!
 
     @IBOutlet weak var itemTextField: UITextField!
 
     @IBAction func didTapAdd(sender: UIButton) {
-        NSLog("Tapped add")
         let newItem = TodoItem(text: itemTextField.text)
+        itemTextField.text = ""
         self.tableView.beginUpdates()
         items.insert(newItem, atIndex: 0)
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)

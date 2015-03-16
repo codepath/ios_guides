@@ -7,26 +7,28 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var todoViewController:TodoListTableViewController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        NSLog("Documents Directory: \(NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first)")
+        let nav = window!.rootViewController as UINavigationController
+        todoViewController = nav.viewControllers.first! as TodoListTableViewController
+        todoViewController.items = self.itemsFromDisk()
         return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        self.saveToDisk()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -42,5 +44,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+    private func itemsFromDisk() -> [TodoItem] {
+        return Array()
+    }
 
+    private func saveToDisk(){
+        
+    }
+
+    private var pathForKeyedArchive:String {
+        get {
+            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as NSString).stringByAppendingPathComponent("archive.bin")
+        }
+    }
+
+    // MARK: Core Data Stack
+    private var pathForCoreDataStore:String {
+        get {
+            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as NSString).stringByAppendingPathComponent("archive.sqlite")
+        }
+    }
+
+    var persistentStoreCoordinator:NSPersistentStoreCoordinator!
+    var managedObjectContext:NSManagedObjectContext!
+
+    private func setupCoreDataStack(){
+        let modelURL = NSBundle.mainBundle().URLForResource("Model", withExtension: "momd")!
+        let model = NSManagedObjectModel(contentsOfURL: modelURL)!
+        persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
+        persistentStoreCoordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: NSURL(fileURLWithPath: pathForCoreDataStore), options: nil, error: nil)
+        managedObjectContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.MainQueueConcurrencyType)
+        managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
+    }
+
+}

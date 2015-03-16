@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>17F217DB-51CB-4379-A8C8-C8F29A97D3AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PeristenceDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>845D720585811C337DF8E69370074600799AA048</key>
+		<string>github.com:codepath/ios_guides.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PeristenceDemo/PeristenceDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>845D720585811C337DF8E69370074600799AA048</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:codepath/ios_guides.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>845D720585811C337DF8E69370074600799AA048</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>845D720585811C337DF8E69370074600799AA048</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_guides</string>
+		</dict>
+	</array>
+</dict>
+</plist>

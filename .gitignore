@@ -1,7 +1,3 @@
 .DS_Store
-ViewControllerTransitionDemo/ViewControllerTransitionDemo.xcodeproj/xcuserdata/*
-PerformanceDemo/PerformanceDemo.xcodeproj/xcuserdata/*
-PeristenceDemo/PeristenceDemo.xcodeproj/xcuserdata/*
-PeristenceDemo/PeristenceDemo.xcodeproj/project.xcworkspace/xcuserdata/*
-PerformanceDemo/PerformanceDemo.xcodeproj/project.xcworkspace/xcuserdata/*
+**/xcuserdata/*
 Drawing/DrawingPlayground.playground/*

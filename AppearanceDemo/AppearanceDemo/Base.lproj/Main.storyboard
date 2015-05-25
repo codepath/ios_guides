@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0s1-7Q-Ao7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppearanceDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwh-jN-Ot1">
+                                <rect key="frame" x="243" y="289" width="113" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-eY-qLw">
+                                <rect key="frame" x="243" y="313" width="110" height="30"/>
+                                <state key="normal" title="Example Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npN-Gz-Jy0" customClass="MyCustomView" customModule="AppearanceDemo" customModuleProvider="target">
+                                <rect key="frame" x="66" y="351" width="468" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label in a Custom Subview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIN-YD-u88">
+                                        <rect key="frame" x="129.5" y="40" width="209.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8883956755050505" green="0.8883956755050505" blue="0.8883956755050505" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TC2-dI-k0y"/>
+                                    <constraint firstAttribute="centerY" secondItem="pIN-YD-u88" secondAttribute="centerY" id="TTV-WG-7zG"/>
+                                    <constraint firstAttribute="centerX" secondItem="pIN-YD-u88" secondAttribute="centerX" id="b0b-NK-Aze"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="npN-Gz-Jy0" secondAttribute="trailing" constant="50" id="0X5-4b-RPx"/>
+                            <constraint firstItem="npN-Gz-Jy0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="6nq-dT-f0t"/>
+                            <constraint firstItem="npN-Gz-Jy0" firstAttribute="top" secondItem="0dT-eY-qLw" secondAttribute="bottom" constant="8" id="JmQ-9N-Wge"/>
+                            <constraint firstAttribute="centerY" secondItem="Rwh-jN-Ot1" secondAttribute="centerY" id="fCn-0C-DuZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Rwh-jN-Ot1" secondAttribute="centerX" id="mqz-Hc-xYO"/>
+                            <constraint firstItem="Rwh-jN-Ot1" firstAttribute="centerX" secondItem="0dT-eY-qLw" secondAttribute="centerX" constant="1.5" id="rdW-cK-bmp"/>
+                            <constraint firstItem="0dT-eY-qLw" firstAttribute="top" secondItem="Rwh-jN-Ot1" secondAttribute="bottom" constant="3.5" id="x3F-hi-esH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="LMe-LH-3me">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="3tg-Gb-FNY"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="1379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NA3-Qu-rSN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0s1-7Q-Ao7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="30b-tR-sPj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZWH-mj-qCJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tnf-qG-gSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="1022"/>
+        </scene>
+    </scenes>
+</document>

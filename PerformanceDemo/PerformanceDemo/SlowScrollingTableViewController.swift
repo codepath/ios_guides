@@ -26,7 +26,7 @@ class SlowScrollingTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(FIBONACCI_CELL_IDENTIFIER) as FibonacciCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(FIBONACCI_CELL_IDENTIFIER) as! FibonacciCell
         cell.fibonacciEntry = entries[indexPath.row]
         return cell
     }

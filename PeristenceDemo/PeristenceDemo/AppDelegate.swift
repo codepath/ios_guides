@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         NSLog("Documents Directory: \(NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first)")
-        let nav = window!.rootViewController as UINavigationController
-        todoViewController = nav.viewControllers.first! as TodoListTableViewController
+        let nav = window!.rootViewController as! UINavigationController
+        todoViewController = nav.viewControllers.first! as! TodoListTableViewController
         todoViewController.items = self.itemsFromDisk()
         return true
     }
@@ -54,14 +54,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var pathForKeyedArchive:String {
         get {
-            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as NSString).stringByAppendingPathComponent("archive.bin")
+            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as! NSString).stringByAppendingPathComponent("archive.bin")
         }
     }
 
     // MARK: Core Data Stack
     private var pathForCoreDataStore:String {
         get {
-            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as NSString).stringByAppendingPathComponent("archive.sqlite")
+            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as! NSString).stringByAppendingPathComponent("archive.sqlite")
         }
     }
 

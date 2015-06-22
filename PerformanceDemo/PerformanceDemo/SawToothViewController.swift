@@ -19,7 +19,7 @@ class SawToothViewController: UIViewController {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
             for var i = 0; i < ITERATIONS; i++ {
                 for var j = 0; j < 10000; j++ {
-                    var myString:String = "i:\(i)/ j:\(j)"
+                    var myString:NSString = "i:\(i)/ j:\(j)" as NSString
                     var myUppercaseString = myString.uppercaseString
                 }
                 dispatch_async(dispatch_get_main_queue()) {

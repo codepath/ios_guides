@@ -40,7 +40,7 @@ class TodoListTableViewController: UITableViewController, TodoItemTableViewCellD
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(ITEM_CELL_IDENTIFIER) as TodoItemTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(ITEM_CELL_IDENTIFIER) as! TodoItemTableViewCell
         cell.todoItem = items[indexPath.row]
         cell.delegate = self
         return cell

@@ -36,8 +36,28 @@
                                             <segue destination="boF-Rd-kNh" kind="show" id="nZ0-fG-4ny"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eUT-pX-xtb" rowHeight="64" style="IBUITableViewCellStyleDefault" id="FNx-1f-hio" userLabel="Expanding Image">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Xvc-Tq-z6c" rowHeight="64" style="IBUITableViewCellStyleDefault" id="4UM-Ks-huQ" userLabel="Implicit Animation">
                                         <rect key="frame" x="0.0" y="128" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4UM-Ks-huQ" id="AfZ-th-ol0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Implicit Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xvc-Tq-z6c">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="63.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CKf-3b-yNF" kind="show" id="1xv-TZ-qoV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eUT-pX-xtb" rowHeight="64" style="IBUITableViewCellStyleDefault" id="FNx-1f-hio" userLabel="Expanding Image">
+                                        <rect key="frame" x="0.0" y="192" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNx-1f-hio" id="iXt-v8-gIK">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
@@ -57,7 +77,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Gsq-uu-njt" rowHeight="64" style="IBUITableViewCellStyleDefault" id="03p-to-5Uk" userLabel="Stuttering Table View">
-                                        <rect key="frame" x="0.0" y="192" width="600" height="64"/>
+                                        <rect key="frame" x="0.0" y="256" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="03p-to-5Uk" id="ZVs-fR-AOL">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
@@ -89,6 +109,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMA-Vi-thZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1175" y="616"/>
+        </scene>
+        <!--Implicit Animation-->
+        <scene sceneID="Iuk-gU-4nU">
+            <objects>
+                <viewController id="CKf-3b-yNF" customClass="ImplicitAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CYu-Cj-mg9"/>
+                        <viewControllerLayoutGuide type="bottom" id="HTg-dZ-wfd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d21-Va-ycF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgd-fG-SJo" customClass="MyCustomView">
+                                <rect key="frame" x="280" y="279.5" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.15686274510000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NHX-AT-k9x"/>
+                                    <constraint firstAttribute="height" constant="40" id="ctl-Wf-Oei"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fgd-fG-SJo" firstAttribute="centerY" secondItem="d21-Va-ycF" secondAttribute="centerY" id="HhI-Cm-QfD"/>
+                            <constraint firstItem="Fgd-fG-SJo" firstAttribute="centerX" secondItem="d21-Va-ycF" secondAttribute="centerX" id="O2L-3w-mDi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Implicit Animation" id="kCh-De-2VE">
+                        <barButtonItem key="rightBarButtonItem" title="Go" id="m53-fV-g1U">
+                            <connections>
+                                <action selector="didTapGo:" destination="CKf-3b-yNF" id="T5v-ca-gog"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="animatedView" destination="Fgd-fG-SJo" id="9AW-F6-SCS"/>
+                        <outlet property="centerConstraint" destination="O2L-3w-mDi" id="F9j-to-V2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZA-p7-RN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999" y="-101"/>
         </scene>
         <!--Expanding-->
         <scene sceneID="fQ1-aN-FXk">
@@ -221,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z7-mw-Hqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2189" y="-128"/>
+            <point key="canvasLocation" x="2685" y="-58"/>
         </scene>
         <!--Stuttering View Controller-->
         <scene sceneID="5C9-DY-YfZ">
@@ -277,7 +340,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mkx-1E-s4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="664"/>
+            <point key="canvasLocation" x="2813" y="634"/>
         </scene>
         <!--Layer Walkthrough View Controller-->
         <scene sceneID="Sk5-1T-Ii9">
@@ -332,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfV-wS-hOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1687" y="1409"/>
+            <point key="canvasLocation" x="2751" y="1547"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tkx-PO-Jbb">

@@ -27,7 +27,7 @@
 - (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     SlowCell *cell = (SlowCell *)[tableView dequeueReusableCellWithIdentifier:@"com.codepath.slowcell"];
-    cell.centerLabel.text = [NSString stringWithFormat:@"Row: %i", indexPath.row];
+    cell.centerLabel.text = [NSString stringWithFormat:@"Row: %li", (long)indexPath.row];
     return cell;
 }
 

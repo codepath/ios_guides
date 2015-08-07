@@ -17,6 +17,7 @@
 		B59C70DC1B7133B80064D94F /* StutteringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59C70DB1B7133B80064D94F /* StutteringViewController.m */; };
 		B59C70DE1B7138570064D94F /* yosemite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B59C70DD1B7138570064D94F /* yosemite.jpg */; };
 		B59C70E01B715DE10064D94F /* yosemite-optimized.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C70DF1B715DE10064D94F /* yosemite-optimized.png */; };
+		B59C70E31B754DC20064D94F /* ExpandingImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59C70E21B754DC20064D94F /* ExpandingImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		B59C70DB1B7133B80064D94F /* StutteringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StutteringViewController.m; sourceTree = "<group>"; };
 		B59C70DD1B7138570064D94F /* yosemite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yosemite.jpg; sourceTree = "<group>"; };
 		B59C70DF1B715DE10064D94F /* yosemite-optimized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yosemite-optimized.png"; sourceTree = "<group>"; };
+		B59C70E11B754DC20064D94F /* ExpandingImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingImageViewController.h; sourceTree = "<group>"; };
+		B59C70E21B754DC20064D94F /* ExpandingImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				B59C70BD1B7129E80064D94F /* Supporting Files */,
 				B59C70DA1B7133B80064D94F /* StutteringViewController.h */,
 				B59C70DB1B7133B80064D94F /* StutteringViewController.m */,
+				B59C70E11B754DC20064D94F /* ExpandingImageViewController.h */,
+				B59C70E21B754DC20064D94F /* ExpandingImageViewController.m */,
 			);
 			path = AdvancedGraphics;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				B59C70DC1B7133B80064D94F /* StutteringViewController.m in Sources */,
 				B59C70D91B71311C0064D94F /* AnimationDemoViewController.m in Sources */,
 				B59C70BF1B7129E80064D94F /* main.m in Sources */,
+				B59C70E31B754DC20064D94F /* ExpandingImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +328,7 @@
 				B59C70D31B7129E80064D94F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

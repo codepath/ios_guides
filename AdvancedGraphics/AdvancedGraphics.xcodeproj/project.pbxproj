@@ -19,6 +19,7 @@
 		B59C70DE1B7138570064D94F /* yosemite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B59C70DD1B7138570064D94F /* yosemite.jpg */; };
 		B59C70E01B715DE10064D94F /* yosemite-optimized.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C70DF1B715DE10064D94F /* yosemite-optimized.png */; };
 		B59C70E31B754DC20064D94F /* ExpandingImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59C70E21B754DC20064D94F /* ExpandingImageViewController.m */; };
+		B5C0EBCD1B75C9FE008B31E2 /* SnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C0EBCC1B75C9FE008B31E2 /* SnowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		B59C70DF1B715DE10064D94F /* yosemite-optimized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yosemite-optimized.png"; sourceTree = "<group>"; };
 		B59C70E11B754DC20064D94F /* ExpandingImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingImageViewController.h; sourceTree = "<group>"; };
 		B59C70E21B754DC20064D94F /* ExpandingImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingImageViewController.m; sourceTree = "<group>"; };
+		B5C0EBCB1B75C9FE008B31E2 /* SnowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowViewController.h; sourceTree = "<group>"; };
+		B5C0EBCC1B75C9FE008B31E2 /* SnowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				B59C70E21B754DC20064D94F /* ExpandingImageViewController.m */,
 				B50737531B75655A00C831B5 /* ImplicitAnimationViewController.h */,
 				B50737541B75655A00C831B5 /* ImplicitAnimationViewController.m */,
+				B5C0EBCB1B75C9FE008B31E2 /* SnowViewController.h */,
+				B5C0EBCC1B75C9FE008B31E2 /* SnowViewController.m */,
 			);
 			path = AdvancedGraphics;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				B59C70DC1B7133B80064D94F /* StutteringViewController.m in Sources */,
 				B59C70D91B71311C0064D94F /* AnimationDemoViewController.m in Sources */,
 				B59C70BF1B7129E80064D94F /* main.m in Sources */,
+				B5C0EBCD1B75C9FE008B31E2 /* SnowViewController.m in Sources */,
 				B59C70E31B754DC20064D94F /* ExpandingImageViewController.m in Sources */,
 				B50737551B75655A00C831B5 /* ImplicitAnimationViewController.m in Sources */,
 			);

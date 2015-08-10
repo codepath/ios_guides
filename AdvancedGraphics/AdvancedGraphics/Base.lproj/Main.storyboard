@@ -56,8 +56,28 @@
                                             <segue destination="CKf-3b-yNF" kind="show" id="1xv-TZ-qoV"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eUT-pX-xtb" rowHeight="64" style="IBUITableViewCellStyleDefault" id="FNx-1f-hio" userLabel="Expanding Image">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="be8-tw-OXz" rowHeight="64" style="IBUITableViewCellStyleDefault" id="A0A-MT-o9A" userLabel="Snow Fall">
                                         <rect key="frame" x="0.0" y="192" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A0A-MT-o9A" id="5Yz-vC-uDk">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Snow Fall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="be8-tw-OXz">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="63.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7VV-RR-zDi" kind="show" id="Wbh-SV-RbW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eUT-pX-xtb" rowHeight="64" style="IBUITableViewCellStyleDefault" id="FNx-1f-hio" userLabel="Expanding Image">
+                                        <rect key="frame" x="0.0" y="256" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FNx-1f-hio" id="iXt-v8-gIK">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
@@ -77,7 +97,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Gsq-uu-njt" rowHeight="64" style="IBUITableViewCellStyleDefault" id="03p-to-5Uk" userLabel="Stuttering Table View">
-                                        <rect key="frame" x="0.0" y="256" width="600" height="64"/>
+                                        <rect key="frame" x="0.0" y="320" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="03p-to-5Uk" id="ZVs-fR-AOL">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
@@ -109,6 +129,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMA-Vi-thZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1175" y="616"/>
+        </scene>
+        <!--Snow Fall-->
+        <scene sceneID="s3v-q3-tvz">
+            <objects>
+                <viewController id="7VV-RR-zDi" customClass="SnowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XNE-F9-nak"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCI-jt-ue7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zNW-wP-tOm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Snow Fall" id="G8c-w9-xlw">
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="W02-DY-KIa">
+                            <connections>
+                                <action selector="didTapStart:" destination="7VV-RR-zDi" id="NPh-Zm-d8p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFM-5G-Ro0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="824"/>
         </scene>
         <!--Implicit Animation-->
         <scene sceneID="Iuk-gU-4nU">
@@ -395,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfV-wS-hOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2751" y="1547"/>
+            <point key="canvasLocation" x="1991" y="2211"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tkx-PO-Jbb">

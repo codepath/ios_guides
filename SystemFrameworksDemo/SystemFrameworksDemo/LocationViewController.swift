@@ -27,7 +27,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .Authorized || status == .AuthorizedWhenInUse {
             self._startUpdating()
         }

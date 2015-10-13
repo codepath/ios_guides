@@ -7,32 +7,16 @@
 //
 
 import UIKit
-import AddressBook
+import Contacts
 
 private let NAME_CELL_IDENTIFER = "com.codepath.addressbook.namecell"
 
 class AddressBookViewController: UIViewController, UITableViewDataSource {
 
-    var addressBook: ABAddressBook!
+    var store:CNContactStore = CNContactStore()
     var names:[String]?
 
     @IBOutlet weak var namesTableView: UITableView!
-
-    private func _initalizeAddressBook() {
-        var err : Unmanaged<CFError>? = nil
-        var addressBookPointer: Unmanaged<ABAddressBook>? = ABAddressBookCreateWithOptions(nil, &err)
-        assert(err != nil, "Error initializing Address book:\(err)")
-        addressBook = addressBookPointer?.takeRetainedValue()
-    }
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        _initalizeAddressBook()
-    }
-
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        _initalizeAddressBook()
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,36 +24,28 @@ class AddressBookViewController: UIViewController, UITableViewDataSource {
     }
 
     @IBAction func didTapFetch(sender: AnyObject) {
-        switch (ABAddressBookGetAuthorizationStatus()){
-        case .NotDetermined:
-            ABAddressBookRequestAccessWithCompletion(addressBook) {
-                success, error in
-                if success {
-                    self.beginContactSearch()
-                } else {
-                    NSLog("Restricted")
-                }
+        store.requestAccessForEntityType(CNEntityType.Contacts) { (success, errorOrNil) -> Void in
+            guard success else {
+                NSLog("Error: \(errorOrNil)")
+                return
             }
-        case .Denied, .Restricted:
-            NSLog("Restricted")
-        case .Authorized:
             self.beginContactSearch()
         }
     }
 
     func beginContactSearch(){
-        let records = ABAddressBookCopyArrayOfAllPeople(self.addressBook).takeRetainedValue() as NSArray as [ABRecord]
         names = Array()
-        for record in records {
-            let object = ABRecordCopyCompositeName(record)
-            if object.toOpaque() == COpaquePointer.null() {
-
-            } else {
-                var name = object.takeRetainedValue() as NSString
-                names!.append(name)
+        let fetchRequest = CNContactFetchRequest(keysToFetch: [CNContactEmailAddressesKey])
+        try! store.enumerateContactsWithFetchRequest(fetchRequest) { contact, stopPointer in
+            for value in contact.emailAddresses {
+                if let string = value.value as? String {
+                    self.names?.append(string)
+                }
             }
         }
-        namesTableView.reloadData()
+        dispatch_async(dispatch_get_main_queue()){
+            self.namesTableView.reloadData()
+        }
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,7 +53,7 @@ class AddressBookViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = namesTableView.dequeueReusableCellWithIdentifier(NAME_CELL_IDENTIFER) as UITableViewCell
+        let cell = namesTableView.dequeueReusableCellWithIdentifier(NAME_CELL_IDENTIFER)!
         cell.textLabel!.text = names![indexPath.row]
         return cell
     }

@@ -11,23 +11,12 @@
 		B519D59F1AB4F14F009E8E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B519D59D1AB4F14F009E8E8A /* Main.storyboard */; };
 		B519D5A11AB4F14F009E8E8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B519D5A01AB4F14F009E8E8A /* Images.xcassets */; };
 		B519D5A41AB4F14F009E8E8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B519D5A21AB4F14F009E8E8A /* LaunchScreen.xib */; };
-		B519D5B01AB4F14F009E8E8A /* PeristenceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519D5AF1AB4F14F009E8E8A /* PeristenceDemoTests.swift */; };
 		B528846E1AB684C200ECC7CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B528846C1AB684C200ECC7CF /* Model.xcdatamodeld */; };
 		B52884701AB684FA00ECC7CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B528846F1AB684FA00ECC7CF /* CoreData.framework */; };
 		B58633F51AB671C900AD1208 /* TodoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58633F41AB671C900AD1208 /* TodoListTableViewController.swift */; };
 		B58633F71AB6733900AD1208 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58633F61AB6733900AD1208 /* TodoItem.swift */; };
 		B58633F91AB6744B00AD1208 /* TodoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58633F81AB6744B00AD1208 /* TodoItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B519D5AA1AB4F14F009E8E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B519D58C1AB4F14F009E8E8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B519D5931AB4F14F009E8E8A;
-			remoteInfo = PeristenceDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B519D5941AB4F14F009E8E8A /* PeristenceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeristenceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,9 +25,6 @@
 		B519D59E1AB4F14F009E8E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B519D5A01AB4F14F009E8E8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B519D5A31AB4F14F009E8E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B519D5A91AB4F14F009E8E8A /* PeristenceDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeristenceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B519D5AE1AB4F14F009E8E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B519D5AF1AB4F14F009E8E8A /* PeristenceDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeristenceDemoTests.swift; sourceTree = "<group>"; };
 		B528846D1AB684C200ECC7CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B528846F1AB684FA00ECC7CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B58633F41AB671C900AD1208 /* TodoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListTableViewController.swift; sourceTree = "<group>"; };
@@ -55,13 +41,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B519D5A61AB4F14F009E8E8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				B519D5961AB4F14F009E8E8A /* PeristenceDemo */,
-				B519D5AC1AB4F14F009E8E8A /* PeristenceDemoTests */,
 				B52884711AB6850200ECC7CF /* Frameworks */,
 				B519D5951AB4F14F009E8E8A /* Products */,
 			);
@@ -79,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				B519D5941AB4F14F009E8E8A /* PeristenceDemo.app */,
-				B519D5A91AB4F14F009E8E8A /* PeristenceDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,23 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				B519D5981AB4F14F009E8E8A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B519D5AC1AB4F14F009E8E8A /* PeristenceDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				B519D5AF1AB4F14F009E8E8A /* PeristenceDemoTests.swift */,
-				B519D5AD1AB4F14F009E8E8A /* Supporting Files */,
-			);
-			path = PeristenceDemoTests;
-			sourceTree = "<group>";
-		};
-		B519D5AD1AB4F14F009E8E8A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B519D5AE1AB4F14F009E8E8A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,24 +113,6 @@
 			productReference = B519D5941AB4F14F009E8E8A /* PeristenceDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B519D5A81AB4F14F009E8E8A /* PeristenceDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B519D5B61AB4F14F009E8E8A /* Build configuration list for PBXNativeTarget "PeristenceDemoTests" */;
-			buildPhases = (
-				B519D5A51AB4F14F009E8E8A /* Sources */,
-				B519D5A61AB4F14F009E8E8A /* Frameworks */,
-				B519D5A71AB4F14F009E8E8A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B519D5AB1AB4F14F009E8E8A /* PBXTargetDependency */,
-			);
-			name = PeristenceDemoTests;
-			productName = PeristenceDemoTests;
-			productReference = B519D5A91AB4F14F009E8E8A /* PeristenceDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,10 +126,6 @@
 				TargetAttributes = {
 					B519D5931AB4F14F009E8E8A = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					B519D5A81AB4F14F009E8E8A = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = B519D5931AB4F14F009E8E8A;
 					};
 				};
 			};
@@ -205,7 +143,6 @@
 			projectRoot = "";
 			targets = (
 				B519D5931AB4F14F009E8E8A /* PeristenceDemo */,
-				B519D5A81AB4F14F009E8E8A /* PeristenceDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +155,6 @@
 				B519D59F1AB4F14F009E8E8A /* Main.storyboard in Resources */,
 				B519D5A41AB4F14F009E8E8A /* LaunchScreen.xib in Resources */,
 				B519D5A11AB4F14F009E8E8A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B519D5A71AB4F14F009E8E8A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B519D5A51AB4F14F009E8E8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B519D5B01AB4F14F009E8E8A /* PeristenceDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B519D5AB1AB4F14F009E8E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B519D5931AB4F14F009E8E8A /* PeristenceDemo */;
-			targetProxy = B519D5AA1AB4F14F009E8E8A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B519D59D1AB4F14F009E8E8A /* Main.storyboard */ = {
@@ -383,42 +297,6 @@
 			};
 			name = Release;
 		};
-		B519D5B71AB4F14F009E8E8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PeristenceDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeristenceDemo.app/PeristenceDemo";
-			};
-			name = Debug;
-		};
-		B519D5B81AB4F14F009E8E8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PeristenceDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeristenceDemo.app/PeristenceDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,15 +314,6 @@
 			buildConfigurations = (
 				B519D5B41AB4F14F009E8E8A /* Debug */,
 				B519D5B51AB4F14F009E8E8A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B519D5B61AB4F14F009E8E8A /* Build configuration list for PBXNativeTarget "PeristenceDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B519D5B71AB4F14F009E8E8A /* Debug */,
-				B519D5B81AB4F14F009E8E8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -17,7 +17,7 @@ class MotionViewController: UIViewController {
         super.viewDidAppear(animated)
         self.motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: { (accelerometerData, error) in
             let a = accelerometerData!.acceleration
-            var sum = (a.x * a.x) + (a.y * a.y) + (a.z * a.z)
+            let sum = (a.x * a.x) + (a.y * a.y) + (a.z * a.z)
             let w = self.view.bounds.size.width
             self.widthConstraint.constant = w - (w * CGFloat(sum / 3.0))
             NSLog("Data: \(sqrt(sum))")

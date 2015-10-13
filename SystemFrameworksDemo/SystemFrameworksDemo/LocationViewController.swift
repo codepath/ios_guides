@@ -28,8 +28,11 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == .Authorized || status == .AuthorizedWhenInUse {
+        switch status {
+        case .AuthorizedAlways, .AuthorizedWhenInUse:
             self._startUpdating()
+        default:
+            NSLog("Error")
         }
     }
 
@@ -47,7 +50,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var locationLabel: UILabel!
 
 
-    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
         locationLabel.text = "\(newLocation.coordinate.latitude), \(newLocation.coordinate.longitude)"
     }
 }

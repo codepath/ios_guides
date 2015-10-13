@@ -23,7 +23,7 @@ class TodoItemTableViewCell: UITableViewCell, UITextFieldDelegate {
     }
 
     func textChanged(sender:UITextField){
-        todoItem.text = itemTextField.text
+        todoItem.text = itemTextField.text!
     }
 
     var todoItem:TodoItem! {

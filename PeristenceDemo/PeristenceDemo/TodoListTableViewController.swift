@@ -22,7 +22,7 @@ class TodoListTableViewController: UITableViewController, TodoItemTableViewCellD
     @IBOutlet weak var itemTextField: UITextField!
 
     @IBAction func didTapAdd(sender: UIButton) {
-        let newItem = TodoItem(text: itemTextField.text)
+        let newItem = TodoItem(text: itemTextField.text!)
         itemTextField.text = ""
         self.tableView.beginUpdates()
         items.insert(newItem, atIndex: 0)

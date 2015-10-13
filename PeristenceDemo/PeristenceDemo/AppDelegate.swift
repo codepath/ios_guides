@@ -54,14 +54,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var pathForKeyedArchive:String {
         get {
-            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as! NSString).stringByAppendingPathComponent("archive.bin")
+            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first! as NSString).stringByAppendingPathComponent("archive.bin")
         }
     }
 
     // MARK: Core Data Stack
     private var pathForCoreDataStore:String {
         get {
-            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first as! NSString).stringByAppendingPathComponent("archive.sqlite")
+            return (NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first! as NSString).stringByAppendingPathComponent("archive.sqlite")
         }
     }
 
@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let modelURL = NSBundle.mainBundle().URLForResource("Model", withExtension: "momd")!
         let model = NSManagedObjectModel(contentsOfURL: modelURL)!
         persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
-        persistentStoreCoordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: NSURL(fileURLWithPath: pathForCoreDataStore), options: nil, error: nil)
+        try! persistentStoreCoordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: NSURL(fileURLWithPath: pathForCoreDataStore), options: nil)
         managedObjectContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.MainQueueConcurrencyType)
         managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator
     }

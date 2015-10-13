@@ -12,19 +12,8 @@ protocol TodoItemTableViewCellDelegate: class {
     func todoItemCell(cell:TodoItemTableViewCell, didFinishEditingItem item:TodoItem)
 }
 
-class TodoItemTableViewCell: UITableViewCell, UITextFieldDelegate {
+class TodoItemTableViewCell: UITableViewCell {
     weak var delegate:TodoItemTableViewCellDelegate?
-    @IBOutlet weak var itemTextField: UITextField!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        itemTextField.delegate = self
-        itemTextField.addTarget(self, action: "textChanged:", forControlEvents: UIControlEvents.EditingChanged)
-    }
-
-    func textChanged(sender:UITextField){
-        todoItem.text = itemTextField.text!
-    }
 
     var todoItem:TodoItem! {
         didSet(oldItem){
@@ -32,16 +21,29 @@ class TodoItemTableViewCell: UITableViewCell, UITextFieldDelegate {
         }
     }
 
+    @IBOutlet weak var itemTextField: UITextField!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        itemTextField.delegate = self
+        itemTextField.addTarget(self, action: "textChanged:", forControlEvents: .EditingChanged)
+    }
+
+    func textChanged(sender:UITextField){
+        todoItem.text = itemTextField.text!
+    }
+
     private func updateTextField(){
         itemTextField.text = self.todoItem.text
     }
+}
 
-    // MARK: Text field delegate
+extension TodoItemTableViewCell: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
-
+    
     func textFieldDidEndEditing(textField: UITextField) {
         delegate?.todoItemCell(self, didFinishEditingItem: todoItem)
     }

@@ -64,15 +64,12 @@
 		B519D5961AB4F14F009E8E8A /* PeristenceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B545277A1BCD9C07003E6D19 /* Model */,
+				B54527791BCD9C02003E6D19 /* View */,
+				B545277B1BCD9C1E003E6D19 /* Controller */,
 				B519D5991AB4F14F009E8E8A /* AppDelegate.swift */,
-				B519D59D1AB4F14F009E8E8A /* Main.storyboard */,
 				B519D5A01AB4F14F009E8E8A /* Images.xcassets */,
-				B519D5A21AB4F14F009E8E8A /* LaunchScreen.xib */,
 				B519D5971AB4F14F009E8E8A /* Supporting Files */,
-				B58633F41AB671C900AD1208 /* TodoListTableViewController.swift */,
-				B58633F61AB6733900AD1208 /* TodoItem.swift */,
-				B58633F81AB6744B00AD1208 /* TodoItemTableViewCell.swift */,
-				B528846C1AB684C200ECC7CF /* Model.xcdatamodeld */,
 			);
 			path = PeristenceDemo;
 			sourceTree = "<group>";
@@ -91,6 +88,33 @@
 				B528846F1AB684FA00ECC7CF /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B54527791BCD9C02003E6D19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B58633F81AB6744B00AD1208 /* TodoItemTableViewCell.swift */,
+				B519D59D1AB4F14F009E8E8A /* Main.storyboard */,
+				B519D5A21AB4F14F009E8E8A /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B545277A1BCD9C07003E6D19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B528846C1AB684C200ECC7CF /* Model.xcdatamodeld */,
+				B58633F61AB6733900AD1208 /* TodoItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B545277B1BCD9C1E003E6D19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B58633F41AB671C900AD1208 /* TodoListTableViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -10,10 +10,8 @@ import UIKit
 import Contacts
 
 private let NAME_CELL_IDENTIFER = "com.codepath.addressbook.namecell"
-
 class AddressBookViewController: UIViewController, UITableViewDataSource {
 
-    var store:CNContactStore = CNContactStore()
     var names:[String]?
 
     @IBOutlet weak var namesTableView: UITableView!
@@ -24,7 +22,7 @@ class AddressBookViewController: UIViewController, UITableViewDataSource {
     }
 
     @IBAction func didTapFetch(sender: AnyObject) {
-        store.requestAccessForEntityType(CNEntityType.Contacts) { (success, errorOrNil) -> Void in
+        CNContactStore().requestAccessForEntityType(CNEntityType.Contacts) { (success, errorOrNil) -> Void in
             guard success else {
                 NSLog("Error: \(errorOrNil)")
                 return
@@ -36,7 +34,7 @@ class AddressBookViewController: UIViewController, UITableViewDataSource {
     func beginContactSearch(){
         names = Array()
         let fetchRequest = CNContactFetchRequest(keysToFetch: [CNContactEmailAddressesKey])
-        try! store.enumerateContactsWithFetchRequest(fetchRequest) { contact, stopPointer in
+        try! CNContactStore().enumerateContactsWithFetchRequest(fetchRequest) { contact, stopPointer in
             for value in contact.emailAddresses {
                 if let string = value.value as? String {
                     self.names?.append(string)

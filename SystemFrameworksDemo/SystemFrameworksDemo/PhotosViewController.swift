@@ -33,8 +33,13 @@ class PhotosViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
 
     @IBOutlet weak var imageView: UIImageView!
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         self.imageView.image = image
+        self.dismissViewControllerAnimated(true) {}
+    }
+
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        NSLog("Canceled picker")
         self.dismissViewControllerAnimated(true) {}
     }
 }

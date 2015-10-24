@@ -26,6 +26,17 @@ class DetailViewController: UIViewController {
         }
     }
 
+    @IBAction func didTapFontSettings(sender: UIButton) {
+        let settings = FontSettingsViewController.fontSettingsController()
+        settings.modalPresentationStyle = .Popover
+        settings.delegate = self
+        let popover = settings.popoverPresentationController!
+        popover.sourceView = sender
+        popover.sourceRect = sender.bounds
+        popover.delegate = self
+        self.presentViewController(settings, animated: true, completion: nil)
+
+    }
     private func reloadFonts() {
         if let familyName = fontFamilyName {
             self.fonts = UIFont.fontNamesForFamilyName(familyName).map {
@@ -49,5 +60,29 @@ extension DetailViewController: UITableViewDataSource {
         cell.textLabel?.text = PLACEHOLDER_TEXT
         cell.textLabel?.font = fonts[indexPath.row]
         return cell
+    }
+}
+
+extension DetailViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .OverFullScreen
+    }
+
+    func presentationController(controller: UIPresentationController, viewControllerForAdaptivePresentationStyle style: UIModalPresentationStyle) -> UIViewController? {
+        let dismissButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "dismissFontSettings:")
+        controller.presentedViewController.navigationItem.leftBarButtonItem = dismissButton
+        return UINavigationController(rootViewController: controller.presentedViewController)
+    }
+
+    func dismissFontSettings(sender:UIBarButtonItem){
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+}
+
+extension DetailViewController:FontSettingsViewControllerDelegate {
+    func fontSettingsViewController(controller: FontSettingsViewController, didChangeSizeToSize fontSize: CGFloat) {
+        self.fontSize = fontSize
+        self.reloadFonts()
+        self.fontsTableView.reloadData()
     }
 }

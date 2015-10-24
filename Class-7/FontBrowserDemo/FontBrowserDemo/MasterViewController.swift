@@ -9,7 +9,7 @@
 import UIKit
 
 typealias FontFamilyName = String
-
+let SETTINGS_SEGUE = "com.codepath.settingsSegue"
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
@@ -42,6 +42,9 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+        } else if segue.identifier == SETTINGS_SEGUE {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! GlobalSettingsViewController
+            controller.delegate = self
         }
     }
 
@@ -62,6 +65,10 @@ class MasterViewController: UITableViewController {
         cell.textLabel!.text = name
         return cell
     }
-
 }
 
+extension MasterViewController:GlobalSettingsViewControllerDelegate {
+    func didCompleteGlobalSettingsController(controller: GlobalSettingsViewController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+}

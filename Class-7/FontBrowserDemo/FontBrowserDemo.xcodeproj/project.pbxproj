@@ -15,6 +15,7 @@
 		B558B9141BDC292600745AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B558B9121BDC292600745AF5 /* LaunchScreen.storyboard */; };
 		B558B91C1BDC2EAB00745AF5 /* FontSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558B91B1BDC2EAB00745AF5 /* FontSettingsViewController.swift */; };
 		B558B91E1BDC2EDD00745AF5 /* FontSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B558B91D1BDC2EDD00745AF5 /* FontSettingsViewController.storyboard */; };
+		B558B9201BDC43F500745AF5 /* GlobalSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558B91F1BDC43F500745AF5 /* GlobalSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B558B9151BDC292600745AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B558B91B1BDC2EAB00745AF5 /* FontSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSettingsViewController.swift; sourceTree = "<group>"; };
 		B558B91D1BDC2EDD00745AF5 /* FontSettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FontSettingsViewController.storyboard; sourceTree = "<group>"; };
+		B558B91F1BDC43F500745AF5 /* GlobalSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				B558B9151BDC292600745AF5 /* Info.plist */,
 				B558B91B1BDC2EAB00745AF5 /* FontSettingsViewController.swift */,
 				B558B91D1BDC2EDD00745AF5 /* FontSettingsViewController.storyboard */,
+				B558B91F1BDC43F500745AF5 /* GlobalSettingsViewController.swift */,
 			);
 			path = FontBrowserDemo;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				B558B90C1BDC292600745AF5 /* DetailViewController.swift in Sources */,
 				B558B90A1BDC292600745AF5 /* MasterViewController.swift in Sources */,
 				B558B9081BDC292600745AF5 /* AppDelegate.swift in Sources */,
+				B558B9201BDC43F500745AF5 /* GlobalSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

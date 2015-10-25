@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6wp-Cz-PQO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="wJ4-Hl-5hd">
+            <objects>
+                <viewController id="6wp-Cz-PQO" customClass="QuestionViewController" customModule="FlashCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAC-Uq-a0w"/>
+                        <viewControllerLayoutGuide type="bottom" id="45k-D9-dXt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3tx-Ne-xgf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogK-AJ-eXk">
+                                <rect key="frame" x="20" y="283" width="560" height="32.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v45-Sl-QOl">
+                                <rect key="frame" x="487" y="558" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleColor" red="0.0" green="0.90980392160000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapShowAnswer:" destination="6wp-Cz-PQO" eventType="touchUpInside" id="ekE-mk-XIs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.49019607843137253" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ogK-AJ-eXk" firstAttribute="centerX" secondItem="3tx-Ne-xgf" secondAttribute="centerX" id="QRk-mP-r7g"/>
+                            <constraint firstItem="ogK-AJ-eXk" firstAttribute="centerY" secondItem="3tx-Ne-xgf" secondAttribute="centerY" id="SU0-gf-QDF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ogK-AJ-eXk" secondAttribute="trailing" id="ZK7-tN-M4P"/>
+                            <constraint firstItem="ogK-AJ-eXk" firstAttribute="leading" secondItem="3tx-Ne-xgf" secondAttribute="leadingMargin" id="fve-DN-iKk"/>
+                            <constraint firstItem="45k-D9-dXt" firstAttribute="top" secondItem="v45-Sl-QOl" secondAttribute="bottom" constant="12" id="gaX-Ne-aFV"/>
+                            <constraint firstItem="v45-Sl-QOl" firstAttribute="trailing" secondItem="ogK-AJ-eXk" secondAttribute="trailing" id="yJF-WK-mOV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="questionLabel" destination="ogK-AJ-eXk" id="GpV-Ll-Qjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdh-6d-M47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="383"/>
+        </scene>
+    </scenes>
+</document>

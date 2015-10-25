@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Vertical Split View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VerticalSplitViewController" customModule="FlashCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWX-oU-w8n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.67233200839999996" green="0.76910869989999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4Y-gT-wKD">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.69237951760000005" green="0.94557718560000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rWX-oU-w8n" secondAttribute="trailing" id="0Qq-mu-ebH"/>
+                            <constraint firstItem="rWX-oU-w8n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="89u-gs-ETa"/>
+                            <constraint firstItem="y4Y-gT-wKD" firstAttribute="height" secondItem="rWX-oU-w8n" secondAttribute="height" id="HCI-Cd-cfc"/>
+                            <constraint firstItem="y4Y-gT-wKD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a9K-uo-Dlt"/>
+                            <constraint firstAttribute="trailing" secondItem="y4Y-gT-wKD" secondAttribute="trailing" id="g70-hp-yOu"/>
+                            <constraint firstItem="rWX-oU-w8n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pn8-ls-YbB"/>
+                            <constraint firstItem="rWX-oU-w8n" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="wqC-J8-G5H"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y4Y-gT-wKD" secondAttribute="bottom" id="xwe-7d-wf2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="primaryContainerView" destination="rWX-oU-w8n" id="ekt-vO-vNr"/>
+                        <outlet property="secondaryContainerView" destination="y4Y-gT-wKD" id="1mc-ub-i5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

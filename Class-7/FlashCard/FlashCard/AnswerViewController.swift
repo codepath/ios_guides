@@ -37,4 +37,7 @@ class AnswerViewController: UIViewController {
         }
     }
 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.Default
+    }
 }

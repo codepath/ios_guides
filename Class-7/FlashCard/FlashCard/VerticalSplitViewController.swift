@@ -41,4 +41,7 @@ class VerticalSplitViewController: UIViewController {
         let questionViewController = QuestionViewController.questionViewController()
         updateViewController(&primaryController, inContainer: primaryContainerView, newController: questionViewController)
     }
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
 }

@@ -10,6 +10,7 @@ import UIKit
 
 typealias FontFamilyName = String
 let SETTINGS_SEGUE = "com.codepath.settingsSegue"
+let DETAIL_IDENTIFIER = "com.codepath.fontDetailNavigation"
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
@@ -32,17 +33,8 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Segues
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                let fontFamily = fontFamilies[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.fontFamilyName = fontFamily
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        } else if segue.identifier == SETTINGS_SEGUE {
+        if segue.identifier == SETTINGS_SEGUE {
             let controller = (segue.destinationViewController as! UINavigationController).topViewController as! GlobalSettingsViewController
             controller.delegate = self
         }
@@ -64,6 +56,14 @@ class MasterViewController: UITableViewController {
         let name = fontFamilies[indexPath.row]
         cell.textLabel!.text = name
         return cell
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let fontFamily = fontFamilies[indexPath.row]
+        let detailNav = self.storyboard!.instantiateViewControllerWithIdentifier(DETAIL_IDENTIFIER) as! UINavigationController
+        let detailVC = detailNav.viewControllers[0] as! DetailViewController
+        detailVC.fontFamilyName = fontFamily
+        self.showDetailViewController(detailNav, sender: self)
     }
 }
 

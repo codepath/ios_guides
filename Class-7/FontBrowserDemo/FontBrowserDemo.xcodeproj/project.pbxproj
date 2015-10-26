@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51700661BDDE72F00FCE092 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51700651BDDE72F00FCE092 /* RootViewController.swift */; };
 		B558B9081BDC292600745AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558B9071BDC292600745AF5 /* AppDelegate.swift */; };
 		B558B90A1BDC292600745AF5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558B9091BDC292600745AF5 /* MasterViewController.swift */; };
 		B558B90C1BDC292600745AF5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B558B90B1BDC292600745AF5 /* DetailViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B51700651BDDE72F00FCE092 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		B558B9041BDC292600745AF5 /* FontBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B558B9071BDC292600745AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B558B9091BDC292600745AF5 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				B558B91B1BDC2EAB00745AF5 /* FontSettingsViewController.swift */,
 				B558B91D1BDC2EDD00745AF5 /* FontSettingsViewController.storyboard */,
 				B558B91F1BDC43F500745AF5 /* GlobalSettingsViewController.swift */,
+				B51700651BDDE72F00FCE092 /* RootViewController.swift */,
 			);
 			path = FontBrowserDemo;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				B558B91C1BDC2EAB00745AF5 /* FontSettingsViewController.swift in Sources */,
 				B558B90C1BDC292600745AF5 /* DetailViewController.swift in Sources */,
+				B51700661BDDE72F00FCE092 /* RootViewController.swift in Sources */,
 				B558B90A1BDC292600745AF5 /* MasterViewController.swift in Sources */,
 				B558B9081BDC292600745AF5 /* AppDelegate.swift in Sources */,
 				B558B9201BDC43F500745AF5 /* GlobalSettingsViewController.swift in Sources */,
@@ -302,6 +306,7 @@
 				B558B91A1BDC292600745AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,8 +14,33 @@ protocol GlobalSettingsViewControllerDelegate:class {
 
 class GlobalSettingsViewController: UIViewController {
     weak var delegate:GlobalSettingsViewControllerDelegate?
+    private func finish(){
+        delegate?.didCompleteGlobalSettingsController(self)
+    }
     
     @IBAction func didTapDone(sender: AnyObject) {
-        delegate?.didCompleteGlobalSettingsController(self)
+        finish()
+    }
+    @IBAction func tappedReset(sender: AnyObject) {
+        finish()
+        SizeClassHack.sharedSizedClassHack.resetToDefaultSizeClass()
+    }
+    @IBAction func tappedRegularRegular(sender: AnyObject) {
+        finish()
+        SizeClassHack.sharedSizedClassHack.updateSizeClassForHorizontal(.Regular, andVertical: .Regular)
+    }
+    @IBAction func tappedRegularCompact(sender: AnyObject) {
+        finish()
+        SizeClassHack.sharedSizedClassHack.updateSizeClassForHorizontal(.Regular, andVertical: .Compact)
+    }
+    
+    @IBAction func tappedCompactRegular(sender: AnyObject) {
+        finish()
+        SizeClassHack.sharedSizedClassHack.updateSizeClassForHorizontal(.Compact, andVertical: .Regular)
+    }
+
+    @IBAction func tappedCompactCompact(sender: AnyObject) {
+        finish()
+        SizeClassHack.sharedSizedClassHack.updateSizeClassForHorizontal(.Compact, andVertical: .Compact)
     }
 }

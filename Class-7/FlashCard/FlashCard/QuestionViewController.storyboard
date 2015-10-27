@@ -14,13 +14,14 @@
                         <viewControllerLayoutGuide type="top" id="TAC-Uq-a0w"/>
                         <viewControllerLayoutGuide type="bottom" id="45k-D9-dXt"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3tx-Ne-xgf">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="3tx-Ne-xgf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogK-AJ-eXk">
-                                <rect key="frame" x="20" y="283" width="560" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogK-AJ-eXk">
+                                <rect key="frame" x="20" y="250.5" width="560" height="98.5"/>
                                 <animations/>
+                                <string key="text">Mauris facilisis cursus urna. Vivamus at purus et felis convallis tempor quis eu augue. Nullam id quam dolor. Morbi sit amet sollicitudin erat</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

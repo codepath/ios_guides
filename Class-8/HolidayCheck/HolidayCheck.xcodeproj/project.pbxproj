@@ -13,6 +13,11 @@
 		B59996ED1BE69C20005F5FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59996EC1BE69C20005F5FF4 /* Assets.xcassets */; };
 		B59996F01BE69C20005F5FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59996EE1BE69C20005F5FF4 /* LaunchScreen.storyboard */; };
 		B59996FB1BE69C20005F5FF4 /* HolidayCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59996FA1BE69C20005F5FF4 /* HolidayCheckTests.swift */; };
+		B59997061BE69C63005F5FF4 /* HolidayChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997051BE69C63005F5FF4 /* HolidayChecker.swift */; };
+		B59997081BE69C7E005F5FF4 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997071BE69C7E005F5FF4 /* Holiday.swift */; };
+		B599970D1BE69F5A005F5FF4 /* ChristmasChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599970C1BE69F5A005F5FF4 /* ChristmasChecker.swift */; };
+		B599970F1BE69F9C005F5FF4 /* ChristmasTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599970E1BE69F9C005F5FF4 /* ChristmasTest.swift */; };
+		B59997111BE6A360005F5FF4 /* Christmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997101BE6A360005F5FF4 /* Christmas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		B59996F61BE69C20005F5FF4 /* HolidayCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolidayCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59996FA1BE69C20005F5FF4 /* HolidayCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCheckTests.swift; sourceTree = "<group>"; };
 		B59996FC1BE69C20005F5FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59997051BE69C63005F5FF4 /* HolidayChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayChecker.swift; sourceTree = "<group>"; };
+		B59997071BE69C7E005F5FF4 /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		B599970C1BE69F5A005F5FF4 /* ChristmasChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasChecker.swift; sourceTree = "<group>"; };
+		B599970E1BE69F9C005F5FF4 /* ChristmasTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasTest.swift; sourceTree = "<group>"; };
+		B59997101BE6A360005F5FF4 /* Christmas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Christmas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +87,16 @@
 		B59996E41BE69C20005F5FF4 /* HolidayCheck */ = {
 			isa = PBXGroup;
 			children = (
+				B599970B1BE69F4C005F5FF4 /* Checkers */,
 				B59996E51BE69C20005F5FF4 /* AppDelegate.swift */,
 				B59996E71BE69C20005F5FF4 /* ViewController.swift */,
 				B59996E91BE69C20005F5FF4 /* Main.storyboard */,
 				B59996EC1BE69C20005F5FF4 /* Assets.xcassets */,
 				B59996EE1BE69C20005F5FF4 /* LaunchScreen.storyboard */,
 				B59996F11BE69C20005F5FF4 /* Info.plist */,
+				B59997051BE69C63005F5FF4 /* HolidayChecker.swift */,
+				B59997071BE69C7E005F5FF4 /* Holiday.swift */,
+				B59997101BE6A360005F5FF4 /* Christmas.swift */,
 			);
 			path = HolidayCheck;
 			sourceTree = "<group>";
@@ -92,8 +106,17 @@
 			children = (
 				B59996FA1BE69C20005F5FF4 /* HolidayCheckTests.swift */,
 				B59996FC1BE69C20005F5FF4 /* Info.plist */,
+				B599970E1BE69F9C005F5FF4 /* ChristmasTest.swift */,
 			);
 			path = HolidayCheckTests;
+			sourceTree = "<group>";
+		};
+		B599970B1BE69F4C005F5FF4 /* Checkers */ = {
+			isa = PBXGroup;
+			children = (
+				B599970C1BE69F5A005F5FF4 /* ChristmasChecker.swift */,
+			);
+			name = Checkers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59996E81BE69C20005F5FF4 /* ViewController.swift in Sources */,
+				B59997061BE69C63005F5FF4 /* HolidayChecker.swift in Sources */,
+				B59997111BE6A360005F5FF4 /* Christmas.swift in Sources */,
+				B59997081BE69C7E005F5FF4 /* Holiday.swift in Sources */,
 				B59996E61BE69C20005F5FF4 /* AppDelegate.swift in Sources */,
+				B599970D1BE69F5A005F5FF4 /* ChristmasChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B599970F1BE69F9C005F5FF4 /* ChristmasTest.swift in Sources */,
 				B59996FB1BE69C20005F5FF4 /* HolidayCheckTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

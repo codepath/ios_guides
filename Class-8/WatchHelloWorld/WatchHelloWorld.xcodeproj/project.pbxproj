@@ -159,6 +159,7 @@
 		B561B5621B000A5200326F09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Codepath;
 				TargetAttributes = {
@@ -415,6 +416,7 @@
 				B561B58B1B000A5200326F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B561B58C1B000A5200326F09 /* Build configuration list for PBXNativeTarget "WatchHelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +425,7 @@
 				B561B58E1B000A5200326F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

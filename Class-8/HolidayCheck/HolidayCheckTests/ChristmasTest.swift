@@ -14,7 +14,6 @@ class ChristmasTests: XCTestCase {
     var christmas:HolidayCheckable = HolidayChecker.Christmas
     override func setUp() {
         super.setUp()
-        christmas = HolidayChecker.Christmas
     }
     
     override func tearDown() {
@@ -37,12 +36,12 @@ class ChristmasTests: XCTestCase {
     
     func testShouldBePositiveForChristmas(){
         let christmasDate = dateFromMonth(12, dayOrNil: 25, yearOrNil: 2015)
-        let holiday = christmas.checkDateForHoliday(christmasDate)
+        let holiday = HolidayChecker.Christmas.checkDateForHoliday(christmasDate)
         XCTAssertNotNil(holiday)
     }
 
     func testShouldFailForNewYears(){
         let newYears = dateFromMonth    (1, dayOrNil: 1, yearOrNil: 2016)
-        XCTAssertNil(christmas.checkDateForHoliday(newYears))
+        XCTAssertNil(HolidayChecker.Christmas.checkDateForHoliday(newYears))
     }
 }

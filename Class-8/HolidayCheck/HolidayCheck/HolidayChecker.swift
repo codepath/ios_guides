@@ -7,6 +7,20 @@
 //
 import Foundation
 
+enum HolidayChecker:String {
+    case Christmas = "Christmas"
+    case NewYears = "NewYears"
+
+    var localizedTitle:String {
+        switch self {
+        case .Christmas:
+            return "Christmas"
+        case .NewYears:
+            return "New Year's"
+        }
+    }
+}
+
 extension HolidayChecker: HolidayCheckable {
     func checkDateForHoliday(date: NSDate) -> Holiday? {
         let components = NSCalendar.currentCalendar().components(

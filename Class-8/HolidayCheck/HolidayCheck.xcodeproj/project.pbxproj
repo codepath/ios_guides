@@ -102,6 +102,7 @@
 				B59996EC1BE69C20005F5FF4 /* Assets.xcassets */,
 				B59996EE1BE69C20005F5FF4 /* LaunchScreen.storyboard */,
 				B59996F11BE69C20005F5FF4 /* Info.plist */,
+				B599972F1BE731D0005F5FF4 /* HolidayChecker.swift */,
 				B59997051BE69C63005F5FF4 /* HolidayCheckable.swift */,
 				B59997071BE69C7E005F5FF4 /* Holiday.swift */,
 				B599972C1BE7284B005F5FF4 /* Holidays */,
@@ -110,7 +111,6 @@
 				B59997161BE6BF17005F5FF4 /* HolidayCheckerPickerController.storyboard */,
 				B59997181BE6D28E005F5FF4 /* HolidayPreferences.swift */,
 				B599971A1BE6D369005F5FF4 /* HolidayPreferenceStore.swift */,
-				B599972F1BE731D0005F5FF4 /* HolidayChecker.swift */,
 			);
 			path = HolidayCheck;
 			sourceTree = "<group>";

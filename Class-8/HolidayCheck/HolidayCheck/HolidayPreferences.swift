@@ -12,20 +12,6 @@ enum HolidayPreferencesKeys:String {
     case Checker = "Checker"
 }
 
-enum HolidayChecker:String {
-    case Christmas = "Christmas"
-    case NewYears = "NewYears"
-
-    var localizedTitle:String {
-        switch self {
-        case .Christmas:
-            return "Christmas"
-        case .NewYears:
-            return "New Year's"
-        }
-    }
-}
-
 protocol HolidayPreferences {
     func setObject(value: AnyObject?,
         forKey defaultName: String)

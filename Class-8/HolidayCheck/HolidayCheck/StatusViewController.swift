@@ -41,10 +41,22 @@ class StatusViewController: UIViewController, HolidayCheckerPickerControllerDele
 
     private func updateCheck(){
         self.title = checker.localizedTitle
-        if let _ = checker.checkDateForHoliday(NSDate()) {
+        if let _ = checker.checkDateForHoliday(date) {
             self.statusLabel.text = "YES"
         } else {
             self.statusLabel.text = "NO"
+        }
+    }
+
+    var date:NSDate {
+        get {
+            if let fakeDateString = NSProcessInfo.processInfo().environment["fakedate"] {
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "yyyy-MM-dd"
+                return formatter.dateFromString(fakeDateString) ?? NSDate()
+            } else {
+                return NSDate()
+            }
         }
     }
 }

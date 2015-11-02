@@ -24,7 +24,7 @@ extension NSUserDefaults:HolidayPreferences {}
 extension HolidayPreferences {
     var currentChecker:HolidayChecker {
         get {
-            return (self.objectForKey(HolidayPreferencesKeys.Checker.rawValue) as? HolidayChecker)  ?? .Christmas
+            return HolidayChecker(rawValue: self.objectForKey(HolidayPreferencesKeys.Checker.rawValue) as? String ?? HolidayChecker.Christmas.rawValue)  ?? .Christmas
         }
         set (value){
             self.setObject(value.rawValue, forKey: HolidayPreferencesKeys.Checker.rawValue)

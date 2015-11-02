@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 protocol Holiday {
     var localizedTitle:String { get }
     var localizedDescription:String { get }

@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol HolidayChecker {
+protocol HolidayCheckable {
     func checkDateForHoliday(date:NSDate) -> Holiday?
     var localizedTitle:String { get }
-    init()
 }

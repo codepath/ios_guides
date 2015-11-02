@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Christmas:Holiday {
+struct ChristmasHoliday:Holiday {
     var localizedTitle:String {
         return "Christmas"
     }

@@ -12,16 +12,16 @@
 		B59996ED1BE69C20005F5FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59996EC1BE69C20005F5FF4 /* Assets.xcassets */; };
 		B59996F01BE69C20005F5FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59996EE1BE69C20005F5FF4 /* LaunchScreen.storyboard */; };
 		B59996FB1BE69C20005F5FF4 /* HolidayCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59996FA1BE69C20005F5FF4 /* HolidayCheckTests.swift */; };
-		B59997061BE69C63005F5FF4 /* HolidayChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997051BE69C63005F5FF4 /* HolidayChecker.swift */; };
+		B59997061BE69C63005F5FF4 /* HolidayCheckable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997051BE69C63005F5FF4 /* HolidayCheckable.swift */; };
 		B59997081BE69C7E005F5FF4 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997071BE69C7E005F5FF4 /* Holiday.swift */; };
-		B599970D1BE69F5A005F5FF4 /* ChristmasChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599970C1BE69F5A005F5FF4 /* ChristmasChecker.swift */; };
 		B599970F1BE69F9C005F5FF4 /* ChristmasTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599970E1BE69F9C005F5FF4 /* ChristmasTest.swift */; };
-		B59997111BE6A360005F5FF4 /* Christmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997101BE6A360005F5FF4 /* Christmas.swift */; };
+		B59997111BE6A360005F5FF4 /* ChristmasHoliday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997101BE6A360005F5FF4 /* ChristmasHoliday.swift */; };
 		B59997131BE6BE6B005F5FF4 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997121BE6BE6B005F5FF4 /* StatusViewController.swift */; };
 		B59997151BE6BE99005F5FF4 /* HolidayCheckerPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997141BE6BE99005F5FF4 /* HolidayCheckerPickerController.swift */; };
 		B59997171BE6BF17005F5FF4 /* HolidayCheckerPickerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59997161BE6BF17005F5FF4 /* HolidayCheckerPickerController.storyboard */; };
 		B59997191BE6D28E005F5FF4 /* HolidayPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59997181BE6D28E005F5FF4 /* HolidayPreferences.swift */; };
 		B599971B1BE6D369005F5FF4 /* HolidayPreferenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599971A1BE6D369005F5FF4 /* HolidayPreferenceStore.swift */; };
+		B599972E1BE7286F005F5FF4 /* NewYearsHoliday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599972D1BE7286F005F5FF4 /* NewYearsHoliday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,16 +44,16 @@
 		B59996F61BE69C20005F5FF4 /* HolidayCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolidayCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59996FA1BE69C20005F5FF4 /* HolidayCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCheckTests.swift; sourceTree = "<group>"; };
 		B59996FC1BE69C20005F5FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B59997051BE69C63005F5FF4 /* HolidayChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayChecker.swift; sourceTree = "<group>"; };
+		B59997051BE69C63005F5FF4 /* HolidayCheckable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayCheckable.swift; sourceTree = "<group>"; };
 		B59997071BE69C7E005F5FF4 /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
-		B599970C1BE69F5A005F5FF4 /* ChristmasChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasChecker.swift; sourceTree = "<group>"; };
 		B599970E1BE69F9C005F5FF4 /* ChristmasTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasTest.swift; sourceTree = "<group>"; };
-		B59997101BE6A360005F5FF4 /* Christmas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Christmas.swift; sourceTree = "<group>"; };
+		B59997101BE6A360005F5FF4 /* ChristmasHoliday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasHoliday.swift; sourceTree = "<group>"; };
 		B59997121BE6BE6B005F5FF4 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		B59997141BE6BE99005F5FF4 /* HolidayCheckerPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayCheckerPickerController.swift; sourceTree = "<group>"; };
 		B59997161BE6BF17005F5FF4 /* HolidayCheckerPickerController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HolidayCheckerPickerController.storyboard; sourceTree = "<group>"; };
 		B59997181BE6D28E005F5FF4 /* HolidayPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayPreferences.swift; sourceTree = "<group>"; };
 		B599971A1BE6D369005F5FF4 /* HolidayPreferenceStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayPreferenceStore.swift; sourceTree = "<group>"; };
+		B599972D1BE7286F005F5FF4 /* NewYearsHoliday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewYearsHoliday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,15 +95,14 @@
 		B59996E41BE69C20005F5FF4 /* HolidayCheck */ = {
 			isa = PBXGroup;
 			children = (
-				B599970B1BE69F4C005F5FF4 /* Checkers */,
 				B59996E51BE69C20005F5FF4 /* AppDelegate.swift */,
 				B59996E91BE69C20005F5FF4 /* Main.storyboard */,
 				B59996EC1BE69C20005F5FF4 /* Assets.xcassets */,
 				B59996EE1BE69C20005F5FF4 /* LaunchScreen.storyboard */,
 				B59996F11BE69C20005F5FF4 /* Info.plist */,
-				B59997051BE69C63005F5FF4 /* HolidayChecker.swift */,
+				B59997051BE69C63005F5FF4 /* HolidayCheckable.swift */,
 				B59997071BE69C7E005F5FF4 /* Holiday.swift */,
-				B59997101BE6A360005F5FF4 /* Christmas.swift */,
+				B599972C1BE7284B005F5FF4 /* Holidays */,
 				B59997121BE6BE6B005F5FF4 /* StatusViewController.swift */,
 				B59997141BE6BE99005F5FF4 /* HolidayCheckerPickerController.swift */,
 				B59997161BE6BF17005F5FF4 /* HolidayCheckerPickerController.storyboard */,
@@ -123,12 +122,13 @@
 			path = HolidayCheckTests;
 			sourceTree = "<group>";
 		};
-		B599970B1BE69F4C005F5FF4 /* Checkers */ = {
+		B599972C1BE7284B005F5FF4 /* Holidays */ = {
 			isa = PBXGroup;
 			children = (
-				B599970C1BE69F5A005F5FF4 /* ChristmasChecker.swift */,
+				B59997101BE6A360005F5FF4 /* ChristmasHoliday.swift */,
+				B599972D1BE7286F005F5FF4 /* NewYearsHoliday.swift */,
 			);
-			name = Checkers;
+			name = Holidays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,12 +235,12 @@
 			files = (
 				B59997131BE6BE6B005F5FF4 /* StatusViewController.swift in Sources */,
 				B599971B1BE6D369005F5FF4 /* HolidayPreferenceStore.swift in Sources */,
-				B59997061BE69C63005F5FF4 /* HolidayChecker.swift in Sources */,
-				B59997111BE6A360005F5FF4 /* Christmas.swift in Sources */,
+				B59997061BE69C63005F5FF4 /* HolidayCheckable.swift in Sources */,
+				B59997111BE6A360005F5FF4 /* ChristmasHoliday.swift in Sources */,
 				B59997081BE69C7E005F5FF4 /* Holiday.swift in Sources */,
 				B59996E61BE69C20005F5FF4 /* AppDelegate.swift in Sources */,
-				B599970D1BE69F5A005F5FF4 /* ChristmasChecker.swift in Sources */,
 				B59997151BE6BE99005F5FF4 /* HolidayCheckerPickerController.swift in Sources */,
+				B599972E1BE7286F005F5FF4 /* NewYearsHoliday.swift in Sources */,
 				B59997191BE6D28E005F5FF4 /* HolidayPreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +432,7 @@
 				B59997011BE69C20005F5FF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B59997021BE69C20005F5FF4 /* Build configuration list for PBXNativeTarget "HolidayCheckTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +441,7 @@
 				B59997041BE69C20005F5FF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

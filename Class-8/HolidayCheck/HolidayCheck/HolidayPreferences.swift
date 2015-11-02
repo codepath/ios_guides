@@ -26,21 +26,6 @@ enum HolidayChecker:String {
     }
 }
 
-extension HolidayChecker: HolidayCheckable {
-    func checkDateForHoliday(date: NSDate) -> Holiday? {
-        let components = NSCalendar.currentCalendar().components(
-            [NSCalendarUnit.Day, NSCalendarUnit.Month], fromDate: date)
-        switch (self, components.month, components.day) {
-        case (.Christmas, 12, 25):
-            return ChristmasHoliday()
-        case (.NewYears, 1, 1):
-            return NewYearsHoliday()
-        default:
-            return nil
-        }
-    }
-}
-
 protocol HolidayPreferences {
     func setObject(value: AnyObject?,
         forKey defaultName: String)

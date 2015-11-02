@@ -11,10 +11,10 @@ import XCTest
 @testable import HolidayCheck
 
 class ChristmasTests: XCTestCase {
-    var christmas:HolidayCheckable = HolidayCheckerPreferenceValue.Christmas
+    var christmas:HolidayCheckable = HolidayChecker.Christmas
     override func setUp() {
         super.setUp()
-        christmas = HolidayCheckerPreferenceValue.Christmas
+        christmas = HolidayChecker.Christmas
     }
     
     override func tearDown() {

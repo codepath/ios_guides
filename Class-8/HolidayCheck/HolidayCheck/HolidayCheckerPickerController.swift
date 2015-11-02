@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HolidayCheckerPickerControllerDelegate:class {
-    func checkerPickerController(controller: HolidayCheckerPickerController, didFinishPickingChecker checker:HolidayCheckerPreferenceValue)
+    func checkerPickerController(controller: HolidayCheckerPickerController, didFinishPickingChecker checker:HolidayChecker)
     func didCancelCheckerPickerController(controller:HolidayCheckerPickerController)
 }
 
@@ -22,8 +22,8 @@ class HolidayCheckerPickerController: UIViewController, UITableViewDataSource, U
     }
 
     weak var delegate:HolidayCheckerPickerControllerDelegate?
-    var selectedChecker:HolidayCheckerPreferenceValue?
-    var checkers:[HolidayCheckerPreferenceValue] = []
+    var selectedChecker:HolidayChecker?
+    var checkers:[HolidayChecker] = []
 
     class func checkerPickerViewControllerWithDelegate() -> HolidayCheckerPickerController {
         let controller = UIStoryboard(name: "HolidayCheckerPickerController", bundle: nil).instantiateInitialViewController() as! HolidayCheckerPickerController

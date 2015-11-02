@@ -12,7 +12,7 @@ enum HolidayPreferencesKeys:String {
     case Checker = "Checker"
 }
 
-enum HolidayCheckerPreferenceValue:String {
+enum HolidayChecker:String {
     case Christmas = "Christmas"
     case NewYears = "NewYears"
 
@@ -26,7 +26,7 @@ enum HolidayCheckerPreferenceValue:String {
     }
 }
 
-extension HolidayCheckerPreferenceValue: HolidayCheckable {
+extension HolidayChecker: HolidayCheckable {
     func checkDateForHoliday(date: NSDate) -> Holiday? {
         let components = NSCalendar.currentCalendar().components(
             [NSCalendarUnit.Day, NSCalendarUnit.Month], fromDate: date)
@@ -51,9 +51,9 @@ protocol HolidayPreferences {
 extension NSUserDefaults:HolidayPreferences {}
 
 extension HolidayPreferences {
-    var currentChecker:HolidayCheckerPreferenceValue {
+    var currentChecker:HolidayChecker {
         get {
-            return (self.objectForKey(HolidayPreferencesKeys.Checker.rawValue) as? HolidayCheckerPreferenceValue)  ?? .Christmas
+            return (self.objectForKey(HolidayPreferencesKeys.Checker.rawValue) as? HolidayChecker)  ?? .Christmas
         }
         set (value){
             self.setObject(value.rawValue, forKey: HolidayPreferencesKeys.Checker.rawValue)

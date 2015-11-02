@@ -25,7 +25,7 @@ class StatusViewController: UIViewController, HolidayCheckerPickerControllerDele
         self.presentViewController(nav, animated: true, completion: nil)
     }
 
-    func checkerPickerController(controller: HolidayCheckerPickerController, didFinishPickingChecker checker: HolidayCheckerPreferenceValue) {
+    func checkerPickerController(controller: HolidayCheckerPickerController, didFinishPickingChecker checker: HolidayChecker) {
         HolidayPreferenceStore.sharedPreferences.currentChecker = checker
         HolidayPreferenceStore.sharedPreferences.synchronize()
         self.checker = checker

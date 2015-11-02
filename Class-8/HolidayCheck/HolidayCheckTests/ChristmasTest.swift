@@ -42,7 +42,7 @@ class ChristmasTests: XCTestCase {
     }
 
     func testShouldFailForNewYears(){
-        let newYears = dateFromMonth(1, dayOrNil: 1, yearOrNil: 2016)
+        let newYears = dateFromMonth    (1, dayOrNil: 1, yearOrNil: 2016)
         XCTAssertNil(christmas.checkDateForHoliday(newYears))
     }
 }

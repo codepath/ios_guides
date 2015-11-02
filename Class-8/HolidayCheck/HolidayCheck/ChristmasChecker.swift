@@ -9,6 +9,9 @@
 import Foundation
 
 struct ChristmasChecker:HolidayChecker {
+    var localizedTitle:String {
+        return "Christmas"
+    }
     func checkDateForHoliday(date: NSDate) -> Holiday? {
         let components = NSCalendar.currentCalendar().components(
             [NSCalendarUnit.Day, NSCalendarUnit.Month], fromDate: date)
@@ -18,4 +21,8 @@ struct ChristmasChecker:HolidayChecker {
             return nil
         }
     }
+}
+
+func ==(lhs: ChristmasChecker, rhs: ChristmasChecker) -> Bool {
+    return true
 }

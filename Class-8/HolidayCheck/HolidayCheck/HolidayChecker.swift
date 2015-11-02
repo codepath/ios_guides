@@ -10,4 +10,6 @@ import Foundation
 
 protocol HolidayChecker {
     func checkDateForHoliday(date:NSDate) -> Holiday?
+    var localizedTitle:String { get }
+    init()
 }
